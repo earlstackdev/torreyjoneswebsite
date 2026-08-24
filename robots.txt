@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://precisionag208.com/sitemap.xml

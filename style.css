@@ -1018,6 +1018,11 @@ textarea:focus-visible {
   box-shadow: var(--shadow-sm);
 }
 
+.accordion-heading {
+  margin: 0;
+  font: inherit;
+}
+
 .accordion-trigger {
   display: flex;
   align-items: center;

@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".accordion-trigger").forEach((trigger) => {
 
     trigger.addEventListener("click", () => {
-      const panel = trigger.nextElementSibling;
+      const panel = trigger.closest(".accordion-item").querySelector(".accordion-panel");
       const isOpen =
         trigger.getAttribute("aria-expanded") === "true";
 
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".accordion-trigger").forEach((other) => {
         other.setAttribute("aria-expanded", "false");
 
-        const otherPanel = other.nextElementSibling;
+        const otherPanel = other.closest(".accordion-item").querySelector(".accordion-panel");
 
         if (otherPanel) {
           otherPanel.style.maxHeight = null;
